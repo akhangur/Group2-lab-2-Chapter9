@@ -16,6 +16,9 @@ function submitFunction(e) {
            req[i].classList.add('error');
             e.preventDefault();
         }
+        else{
+            req[i].classList.remove('error');
+        }
     }
 }
 
