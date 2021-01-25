@@ -9,6 +9,12 @@ hgelem[i].addEventlistener("blur",toggle);
 
 function toggle(f)
 {
-	f.classList.remove('highlight');
-	f.classList.add('hilightable');
+if(f.type=="focus")
+{
+	f.target.classList.add('highlight');
+	else if(f.type=="blur")
+	{
+		f.target.classlist.remove('hilightable');
+	}
+}
 }
